@@ -1,4 +1,4 @@
-/ Assignment code here
+// Assignment code here
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -13,6 +13,7 @@ function writePassword() {
 
   passwordText.value = password;
 }
+
 // Function to generate a random password
 function generatePassword() {
   // Define characters that can be used in the password
@@ -32,17 +33,18 @@ function generatePassword() {
     alert("Please enter a valid password length between 8 and 128.");
     return "";
   }
-   // Initialize password
-   var password = "";
 
-   // Generate password
-   for (var i = 0; i < passwordLength; i++) {
-     // Get a random index to pick a character from allChars
-     var randomIndex = Math.floor(Math.random() * allChars.length);
- 
-     // Append the selected character to the password
-     password += allChars.charAt(randomIndex);
-   }
- 
-   return password;
- }
+  // Initialize password
+  var password = "";
+
+  // Generate password
+  for (var i = 0; i < passwordLength; i++) {
+    // Get a random index to pick a character from allChars
+    var randomIndex = Math.floor(Math.random() * allChars.length);
+
+    // Append the selected character to the password
+    password += allChars.charAt(randomIndex);
+  }
+
+  return password;
+}
