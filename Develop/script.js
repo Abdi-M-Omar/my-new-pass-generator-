@@ -1,8 +1,10 @@
-// Assignment code here
-
+/ Assignment code here
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
 
 // Write password to the #password input
 function writePassword() {
@@ -29,4 +31,4 @@ function generatePassword() {
   if (isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
     alert("Please enter a valid password length between 8 and 128.");
     return "";
-  }  
+  }
